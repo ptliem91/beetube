@@ -8,7 +8,7 @@
 
 https://joinwebs.ticksy.com/articles/5809/?print
 
-1. Post views not working with wp super cache?
+1. Post views not working with wp super cache????
 
 Open this file.
 
@@ -340,3 +340,6 @@ Show on Index page, Show on Category Pages, Show on Landing Page template, Show 
 So Just un-check any option and it will be hide
 
 Thanks
+
+
+/index.php/%year%/%monthnum%/%day%/%postname%/
