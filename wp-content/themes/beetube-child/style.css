@@ -1,0 +1,46 @@
+/*
+Theme Name: Beetube Child
+Theme URI: http://themeforest.net/user/JoinWebs
+Description: A Professional Video/News/Magazine Wordpress Theme.
+Author: Joinwebs
+Author URI: http://themeforest.net/user/JoinWebs
+Version: 2.3
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: theme-options
+Template: beetube
+*/
+
+#main-nav ul li ul{
+	background-color: rgb(166, 152, 153) !important;
+}
+
+#searchform {
+	width: 550px;
+	margin: 0 auto 15px;
+}
+
+#searchform input[type="text"] {
+    background: url(images/find.png) no-repeat 2px 2px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    font: bold 15px Arial,Helvetica,Sans-serif;
+    width: 550px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    height: 25px;
+    }
+
+#searchform input[type="text"]:focus {
+    width: 555px;
+    }
+

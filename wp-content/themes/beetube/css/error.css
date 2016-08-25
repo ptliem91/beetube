@@ -1,0 +1,149 @@
+/* 404 page css */
+*{
+	padding:0px;
+	margin:0px;
+	}
+body{
+	background:url(../images/404bg.png);
+	}
+#main{
+	width:608px;
+	margin:0 auto;
+	text-align:center;
+	font-family: 'Oxygen';
+	}
+.logo{
+	padding-top:9%;
+	margin-bottom:50px;
+	}
+.entry-content, .entry-title{
+	color:#fff;
+	}
+.entry-content p{
+	font-size:30px;
+	font-family: 'Oxygen';
+	margin-bottom:30px;
+	}
+.entry-title{
+	font-size:100px;
+	font-family: 'Oxygen';
+	margin-bottom:30px;
+	}
+.errorbtn{
+	background:url(../images/404btn.png) no-repeat;
+	height:76px;
+	width:230px;
+	margin:0 auto;
+	line-height:76px;
+	
+	padding-left:15px;
+	}
+.errorbtn a{
+	display:block;
+	font-size:24px;
+	color:#fff;
+	text-decoration:none;
+	}
+.tnav{
+	padding-top:60px;
+	padding-bottom:90px;
+	}
+.tnav ul{
+	list-style:none;
+	}
+.tnav ul li{
+	float:left;
+	display:inline;
+	margin-right:30px;
+	}
+.tnav ul li a{
+	font-size:24px;
+	color:#fff;
+	text-decoration:none;
+}
+#copyright, #copyright a{
+	font-size:18px;
+	color:#fff;
+		}
+	/*== Social Navigation
+ *=================================*/
+#social-nav {
+padding-top:50px;
+padding-bottom:50px;
+}
+#social-nav .desc {
+	display:block;
+	margin:-3px 0 3px;
+}
+#social-nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#social-nav li {
+	display:inline;
+	margin:0 0 0 14px;
+}
+#social-nav a {
+	display:inline-block;
+	height:32px;
+	width:32px;
+	text-indent:-987em;
+	overflow:hidden;
+	line-height:987em;
+	background:url(../images/social.png) no-repeat 0 0;
+	margin:-26px 0px;
+}
+#social-nav .tumblr a {
+	background-position:0 0px;
+}
+#social-nav .facebook a {
+	background-position:0 -37px;
+}
+#social-nav .twitter a {
+	background-position:0 -74px;
+}
+
+#social-nav .gplus a {
+	background-position:0 -148px;
+}
+#social-nav .rss a {
+	background-position:0 -111px;
+}
+#social-nav .news a {
+	background-position: 0 -148px;
+}
+#social-nav .youtube a {
+	background-position:0 -150px;
+}
+#social-nav .vimeo a {
+	background-position: 0 -111px;
+}
+#social-nav .lin a {
+    background-position: 0 -222px;
+}
+#social-nav .drib a {
+    background-position: 0 -259px;
+}
+
+#social-nav .tumblr a:hover {
+	background-position:0 -296px;
+}
+#social-nav .twitter a:hover {
+	background-position:0 -370px;
+}
+#social-nav .facebook a:hover {
+	background-position:0 -333px;
+}
+#social-nav .vimeo a:hover {
+	background-position: 0 -407px;
+}
+#social-nav .gplus a:hover {
+	background-position:0 -445px;
+}
+#social-nav .lin a:hover {
+    background-position: 0 -518px;
+}
+#social-nav .drib a:hover {
+    background-position: 0 -555px;
+}

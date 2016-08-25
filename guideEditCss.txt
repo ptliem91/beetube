@@ -1,0 +1,342 @@
+** Change background mega menu panel
+- Theme > beetube-child > style.css > add 
+	#main-nav ul li ul{
+		background-color: rgb(166, 152, 153) !important;
+	}
+
+** Add contact form : [contact-form-7 id="252" title="Contact form 1"]
+
+https://joinwebs.ticksy.com/articles/5809/?print
+
+1. Post views not working with wp super cache?
+
+Open this file.
+
+beetube/funcations/beetube-postviews.php and come to line number 264
+
+You will see this code.
+
+get_template_directory_uri().'postviews-cache.js',
+
+Just add /js/ before to postviews-cache.js like this
+
+get_template_directory_uri().'/js/postviews-cache.js',
+
+Save file and it will work fine. Thanks
+
+2. Does BeeTube have snippets so Google will pick video thumbs as well ?
+
+Yes absolutely. All Video thumbnail are images and if Google crawl image then sure it will be crawled by Google.
+
+3. How to disable Like , Views count, Comments count from all over the website
+
+Just add this code in cutom.css and these all will be hide from all website. 
+
+.stats {
+    display: none !important;
+}
+
+.hori-like {
+    display: none !important;
+}
+
+4. Warning: Cannot modify header information - headers already sent by
+
+This is not a error, This is Warning,
+
+Some hosting server showing this error due to server function. If you are facing this error you just need to follow these instraction.
+
+1- Extract beetube.zip and find this file.
+
+2- BeeTube--> extensions ---> class-tgm-plugin-activation.php
+
+3- Open this file in text editor and remove from the first line.
+
+ob_start();
+4- And Remove this code from last line.
+
+ob_flush();
+After to remove this save file and zip "beetube" folder and install again . It will work fine.
+
+Thanks
+
+5. Load More Button Not Responsive?
+
+Follow This.
+
+beetube/functions.php------> Line Number 1897 Remove
+
+"Items" Word from sentence "Load More Items"
+
+Or 
+-----------------------------------------
+beetube/css/Dashboard.css Line number 273    
+.jw-infinite-scroll{
+width:530px;
+height:44px;
+margin:0 auto;
+}
+Replace With
+
+.jw-infinite-scroll {
+    height: 44px;
+    margin: 0 auto;
+    width: 541px;
+    }
+    
+Dashboard.css Line number 278
+.jw-infinite-scroll a.btn{
+background-color:#f1f1f1;
+color:#999999;
+border:none;
+padding:13px 200px;
+}
+Replace with 
+
+.jw-infinite-scroll a.btn {
+    background-color: #f1f1f1;
+    border: medium none;
+    color: #999999;
+    padding: 20px 205px;
+    }
+
+6. Change Height of Big Slider on HomePage.
+
+First add this css code in custom.css.
+
+.home-featured .stage, .home-featured .stage .item, .home-featured .stage .thumb{height:400px !important;}
+.content_2{height:400px !important;}
+Then Edit your Style Sheet like if you are using stylesheet-light-blue.css Edit this file in any editor and come to Line Number 4177 Change height from here.
+
+height: 420px !important;
+Note: We are using 400px height in this code you can change this with your requirement.
+
+Thanks
+
+7. How to move from detube theme to BeeTube Theme?
+
+Hello Friend, I know there are many user which facing problem on installing beetube when they already have installed detube. 
+
+Now Here is solution , 
+
+If you have already install deTube then before to Install beetube you must need to deactivate all plugin's And Delete that all plugin's which you was install for deTube. 
+
+After to Delete all plugin then Install BeeTube and there will be no problem. 
+Thanks for your Time. Enjoy BeeTube.
+
+8. Increase Widget Area Title limit
+
+Open beetube/widgets/widget-post.php Line Number 64
+
+$post_title = snippet_text($post_title, 20);
+Replace with 
+$post_title = snippet_text($post_title, 100);
+Thanks
+
+9. Load more button showing 2 time on author profile page.
+
+If load more button showing 2 time on your author profile page then follow this. 
+
+Open author.php
+
+Come to line number 27.
+
+You will see this code.
+
+get_template_part('loop-nav');
+So just remove this line and save file.
+
+Thanks
+
+10. Is there any title excerpt limit in BeeTube?
+
+1- Title excerpt limit of sidebar elements you can control from widgets area....
+
+2- Video post titles they are adjustable with the grid system.
+
+ 
+
+11. How to Upgrade Theme?
+
+Just sign in to your themeforest.net account go to downloads page .
+
+Click on downloads and you will get updated version , Upload new folder via FTP in theme folder.
+
+root/wp-content/themes/
+
+but if you have made any changes regarding customization then customization data will be lost.
+
+12. How To Remove SEO Meta Box from Front-End User Posting Page?
+
+If You want to remove SEO Meta (Title, Description, Keywords) Then just include this code in Your CSS file. 
+
+.video-seo-block{display:none !important;}
+
+13. Wrong Image on Facebook Share .
+
+Open File header.php
+
+File Path: wp-content/themes/beetube/header.php
+
+Line Number: 36
+
+You will see this code.
+<?php jtheme_meta_description($post_id); ?>
+
+Add this code after this.
+
+<meta property="og:type" content="video" />  
+<meta property="og:image" content="<?php $image_id = get_post_thumbnail_id();
+$image_url = wp_get_attachment_image_src($image_id,'small', true);
+echo $image_url[0];  ?>"/>
+Update file and problem is solved.
+
+14. How To Remove Big Video From Home Page?
+
+Big Video Means Big Slider , So Now Follow this to remove Big Slider from home page.
+
+WordPress Dashboard---> Theme Options ---> General --
+
+-> Slider Setting----> Number of Posts --> Put Value "0"
+
+Here and It will be hide. 
+
+Thanks
+
+15. BeeTube sync with YouTube views or it acts like a post views count ?
+
+It acts like a post view count no from YouTube because here you can get video from any medium like YouTube, vimeo or you can post video file.
+
+16. Allow User to Post videos on your website with beetube.
+
+Sure you can allow users to submit videos on your website. And sure all post from front end will goes on Pending status, And admin must need to view and then admin can publish post.
+
+Now what you need to do.
+
+1- All User registration from WordPress General settings. User role will be "Contributor".
+
+2- Create a Page (Title= Submit Videos) and select Template by name of "New Post".
+
+3- Publish Page.
+
+4- Add this page in top menu
+
+So Now user can register and post videos on your website and admin can review post before to publish. Thanks
+
+
+17. Video embed not work on page (Beetube)
+
+If you want to embed code in Page other then Post then please add this code in your custom.css.
+
+.page-content .fluid-width-video-wrapper{height:200px !important;}
+Note: We add this code in latest version 2.3.4 So This Code is only for Old User,
+18. JoinWebs charge for BeeTube installation?
+
+No We do not Charge for BeeTube installation. Its is free but yes we charge for customization.
+
+19. Does BeTube support Self-Hosted videos files?
+
+Yes You can upload any format and BeeTube is supported all video file format.
+
+20. Featured image on the display post page?
+
+First of All Please use image 870px width & 500px Width. 
+
+We have 2 solution for Featured image on the display post page.
+
+1- You don't want to apply any size just show which you have upload , Then add this code in Your custom.css file, from WordPress Editor.
+
+.thumb img 
+{
+width: auto !important;
+}
+.thumb {
+    background: none repeat scroll 0 0 #fff !important;
+}
+(Note :Replace #fff with your own backgroung color.
+
+This one is best. )
+And 2nd Point is this You want to show image fit on thumbnail image area, So then apply this code in you custom.css file. 
+
+.thumb img 
+{
+width: 870px;
+height: 500px;
+}<br>
+21. Remove Author Name
+
+If you want to remove author name then you need to follow this. 
+
+We are using Red Color on our demo so our CSS file is stylesheet-red.css
+
+1- Remove Author name from Single post page 
+
+beetube/css/shylesheet-red.css Line Number : 1910
+Here You will see this code.
+
+.single-post .author{
+    background:url(images/icons-red.png) no-repeat -5px -25px;
+    padding-left:25px;
+    margin-right:10px;
+    }
+
+Replace with :
+
+.single-post .author{
+    background:url(images/icons-red.png) no-repeat -5px -25px;
+    padding-left:25px;
+    margin-right:10px;
+    display: none;
+    }
+2- Remove from home page / category page. 
+
+beetube/css/shylesheet-red.css Line Number : 1897
+
+Here You will see this code.
+
+.author{
+    background:url(images/auther-icon.png) no-repeat left;
+    padding-left:25px;
+    margin-right:10px;
+    }
+
+Replace with :
+
+.author{
+    background:url(images/auther-icon.png) no-repeat left;
+    padding-left:25px;
+    margin-right:10px;    
+    display: none;
+    }
+
+22. How To Apply Landing Page Template on Home Page in Beetube?
+
+IF you want to apply Landing page Template on home page then Follow this.
+
+1- WordPress Dashboard --> All Pages --> Add New Page ---> Put Title --> Select Landing Page Template from Template dropdown from left side. Now Publish this page.
+
+2- Come To WordPress Dashboard ---> Settings --> Readings --> Front Page ---> Select that page which you have created recently. Save Settings.
+
+Thats all, 
+
+23. How To Remove Show More Button from Single Post Page in BeeTube?
+
+If you want to hide Show more button from Single post page then follow this.
+
+Got to WordPress Dashboard --> Theme Options --> General ---> Single Post Pages Settings --> "More/Less" Toggle ---> Put 0 here and save settings.
+
+That's all Button is hide.
+
+24. How to remove Featured Slider (carousel slider) from BeeTube?
+
+If you want to remove featured Slider (carousel slider) slider form all over the them then follow this.
+
+WordPress Dashboard ---> Theme Options --> General --> Featured Posts Settings --> 
+1- Top Featured posts settings --> Query --> Number of Post --> Put "0" here and it will be hide.
+2- Footer Featured posts settings -->  Query --> Number of Post --> Put "0" here and it will be hide.
+But If you want to hide this Slider from only home page or category page there you will see these option in Featured Posts Settings
+Show on Index page, Show on Category Pages, Show on Landing Page template, Show on Single Page Standard, Show on Single Page Full-Width Top, Show on Single Page Full-Width MID,
+
+So Just un-check any option and it will be hide
+
+Thanks

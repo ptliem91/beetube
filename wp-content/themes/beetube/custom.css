@@ -1,0 +1,10 @@
+/**
+ * Custom CSS Code by Theme User
+ *
+ * NOTE: This file only work if it's in the theme root directory.
+ */
+ .home-featured .stage, .home-featured .stage .item, .home-featured .stage .thumb{height:400px !important;}
+.content_2
+{
+	height:400px !important;
+}
