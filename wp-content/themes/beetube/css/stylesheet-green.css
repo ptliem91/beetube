@@ -1028,7 +1028,7 @@ body {
     border-top: 1px solid #E1E1E1;
     float: right;
     margin-top: -1px;
-    width: 284px;
+    width: 284px;©
 }
 .full-sidebar #sidebar  {
 	border-top: 1px solid #E1E1E1 !important;
@@ -1047,8 +1047,8 @@ body {
 	height:40px;
 	}
 #footer {
-	background:#222222;
-
+	/*background: #222222;*/
+	background: #e6cbb3;
 }
 #footbar {
 
