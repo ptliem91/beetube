@@ -1704,24 +1704,24 @@ function jtheme_views_timings() {
 function jtheme_supported_sort_types() {
 	$types = array(
 		'date' => array(
-			'label' => __('Date', 'jtheme'),
-			'title' => __('Sort by Date', 'jtheme')
+			'label' => __('Ngày đăng', 'jtheme'),
+			'title' => __('Sắp xếp theo Ngày đăng', 'jtheme')
 		),
 		'title' => array(
-			'label' => __('Title', 'jtheme'),
-			'title' => __('Sort by Title', 'jtheme')
+			'label' => __('Tên phim', 'jtheme'),
+			'title' => __('Sắp xếp theo Tên phim', 'jtheme')
 		),
 		'views' => array(
 			'label' => __('Views', 'jtheme'),
-			'title' => __('Sort by Views', 'jtheme')
+			'title' => __('Sắp xếp theo Views', 'jtheme')
 		),
 		'likes' => array(
 			'label' => __('Likes', 'jtheme'),
-			'title' => __('Sort by Likes', 'jtheme')
+			'title' => __('Sắp xếp theo Likes', 'jtheme')
 		),
 		'comments' => array(
 			'label' => __('Comments', 'jtheme'),
-			'title' => __('Sort by Comments', 'jtheme')
+			'title' => __('Sắp xếp theo Comments', 'jtheme')
 		),
 		'rand' => array(
 			'label' => __('Random', 'jtheme'),

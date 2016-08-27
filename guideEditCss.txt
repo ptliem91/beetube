@@ -343,3 +343,6 @@ Thanks
 
 
 /index.php/%year%/%monthnum%/%day%/%postname%/
+
+*** Chỉnh title list sort by date/views/… -> function.php -> function jtheme_supported_sort_types()
+- Chỉnh title Sort by -> // Output sort html

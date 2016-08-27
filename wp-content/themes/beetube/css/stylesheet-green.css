@@ -1092,6 +1092,7 @@ body {
 }
 #site-logo {
 	display:block;
+	height: 50px; /*liem add 2708*/
 }
 #site-logo img {
 	display:block;
@@ -1343,7 +1344,7 @@ background:url(images/icons-green.png) no-repeat -2px -561px !important;
 	z-index:998;
 }
 .header-secend .wrap{
-	padding:25px 0px !important;
+	padding: 15px 0px !important;
 	}
 /*= Top Navigation
  *==================================================================*/

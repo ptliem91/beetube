@@ -121,7 +121,7 @@
 				}				
 
 				// Output sort html
-				echo '<div class="sort"><span class="prefix sortby"><span>'.__('Sort By:', 'jtheme').'</span></span>';
+				echo '<div class="sort"><span class="prefix sortby"><span>'.__('Sắp xếp', 'jtheme').'</span></span>';
 				echo '<span class="orderby"><div class="top-arrow"></div>'.implode( $out_orderby).'</span><!-- end .orderby -->';
 				
 				echo '<select class="orderby-select">';
