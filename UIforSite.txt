@@ -1,0 +1,13 @@
+https://www.elegantthemes.com/blog/freebie-of-the-week/20-free-background-images-for-wordpress
+
+http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
+
+http://supernovathemes.com/55-small-lite-background-images-for-website-you-can-repeat/
+
+http://bgrepeat.com/
+
+
+http://lea.verou.me/css3patterns/#
+	
+color: #7d7d7d;
+background-color: #cbcbcb;

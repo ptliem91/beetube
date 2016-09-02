@@ -993,6 +993,9 @@ body {
 }
 #page {
 	overflow:hidden;
+
+	background: url(images/genn_background.png);
+	background-repeat: repeat;
 }
 .boxed-wrap #page{
 	width: 1170px;
@@ -1048,7 +1051,9 @@ body {
 	}
 #footer {
 	/*background: #222222;*/
-	background: #e6cbb3;
+	/*background: #e6cbb3;*/
+	background: url(images/genn_bg_footer1.png);
+	background-repeat: repeat;
 }
 #footbar {
 

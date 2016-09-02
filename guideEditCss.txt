@@ -345,4 +345,9 @@ Thanks
 /index.php/%year%/%monthnum%/%day%/%postname%/
 
 *** Chỉnh title list sort by date/views/… -> function.php -> function jtheme_supported_sort_types()
-- Chỉnh title Sort by -> // Output sort html
+- Chỉnh title Sort by -> lôp-actions.php // Output sort html
+
+***Background header + content
+- stylesheet-green.css -> line 994 #page{}
+- add image: /Applications/XAMPP/xamppfiles/htdocs/beetube/wp-content/themes/beetube/css/images
+- Background footer:  css line: 1052
