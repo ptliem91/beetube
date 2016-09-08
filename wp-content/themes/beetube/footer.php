@@ -94,8 +94,8 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
   })();
 </script>
-	
+	<!-- // lieeeeeeee-->
 <?php wp_footer(); ?>
-
+	<!-- // liemmmmmmmmmmmmmmmmmmmm -->
 </body>
 </html>

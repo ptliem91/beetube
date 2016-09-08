@@ -233,7 +233,7 @@ if($wrap_layout == 'boxed-wrap') : $box_style = "#page { width: $wrap_width !imp
 </div>
 </header><!-- end #header-->
 
-<!-- liem add -->
+<!--Start liem add -->
 <div>
 	<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/" >
 
@@ -242,6 +242,7 @@ if($wrap_layout == 'boxed-wrap') : $box_style = "#page { width: $wrap_width !imp
 		
 	</form>
 </div>
+<!--End liem add -->
 
 <div id="main-nav"><div class="wrap cf">
 

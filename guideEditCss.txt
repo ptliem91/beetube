@@ -6,6 +6,8 @@
 
 ** Add contact form : [contact-form-7 id="252" title="Contact form 1"]
 
+
+
 https://joinwebs.ticksy.com/articles/5809/?print
 
 1. Post views not working with wp super cache????
@@ -345,9 +347,16 @@ Thanks
 /index.php/%year%/%monthnum%/%day%/%postname%/
 
 *** Chỉnh title list sort by date/views/… -> function.php -> function jtheme_supported_sort_types()
-- Chỉnh title Sort by -> lôp-actions.php // Output sort html
+- Chỉnh title Sort by -> loop-actions.php // Output sort html
 
-***Background header + content
-- stylesheet-green.css -> line 994 #page{}
-- add image: /Applications/XAMPP/xamppfiles/htdocs/beetube/wp-content/themes/beetube/css/images
-- Background footer:  css line: 1052
+***Background header + content + footer
+- style.css (theme beetube-child) add
+- add image: beetube-child/images
+
+***Chỉnh thông báo khi Search thong ra him: loop-error.php
+
+*** Add Wow slider
+- Tao 1 page de add code: [wowslider id=“1”]
+- Insert page van file theme cat-featured.php:
+<?php $id = 251; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
+- Khi tao WowSlider the thong dc china Effect Descriptionn

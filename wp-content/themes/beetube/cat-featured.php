@@ -8,6 +8,14 @@
  */
 ?>
 
+	<!-- Start WOWSlider.com BODY section --><!-- Start WOWSlider.com BODY section -->
+	<!-- Start WOWSlider.com BODY section --><!-- Start WOWSlider.com BODY section -->
+
+	<?php $id = 251; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
+
+	<!-- End WOWSlider.com BODY section --><!-- End WOWSlider.com BODY section -->
+	<!-- End WOWSlider.com BODY section --><!-- End WOWSlider.com BODY section -->
+
 <?php
 	$args = (array)get_option('jtheme_cat_featured');
 	// If user set 'Post Number' to 0 or leave it empty in theme options, return.
@@ -61,6 +69,9 @@
         
 		<!--</div> end .carousel
 	</div>  end .cat-featured -->
+
+
+	
     <div class="cat-featured wall <?php echo (get_option('jtheme-featured-responsive')==1)?'':'disable-responsive'?>">
     <div class="hori-wrap">
 			
@@ -87,3 +98,4 @@
         </div>
 
 	<?php endif; wp_reset_query(); ?>
+

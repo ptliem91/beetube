@@ -282,6 +282,7 @@ function jtheme_enqueue_scripts() {
 		wp_enqueue_style('jtheme-responsive', get_template_directory_uri().'/responsive.css', 'jtheme-style', '1.4.3');
 	if( get_option('jtheme_video_or_thumb') == 'video' )
 		wp_enqueue_style('jtheme-videocss', get_template_directory_uri().'/css/to-videos.css', 'jtheme-style', '1.4.3');
+
 }
 
 /**

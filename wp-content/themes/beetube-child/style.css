@@ -11,6 +11,55 @@ Tags: theme-options
 Template: beetube
 */
 
+/*.black {
+    background-image:url(images/arrow_scroll_top.png) !important;
+}*/
+
+.fcarousel .thumb {
+    height: 180px !important;
+}
+
+.fcarousel .thumb img {
+    width: 190px !important;
+}
+
+.grid-mini .entry-title {
+    font-size: 15px !important;
+}
+
+.grid-mini .thumb img {
+    width: 160px !important;
+}
+
+.grid-mini .thumb {
+    width: 170px !important;
+    height: 230px !important;
+}
+
+.thumb .overlay {
+    background-image:url(images/genn_icon_play.png) !important;
+}
+
+.home-featured .stage .item-video .thumb .overlay {
+    background-image:url(images/genn_icon_play_slider.png) !important;
+}
+
+.grid-mini .item-video .thumb .overlay {
+    background-image:url(images/genn_icon_play.png) !important;
+}
+
+#footer {
+    background: url(images/genn_bg_footer1.png) !important;
+    background-repeat: repeat !important;
+}
+
+#page {
+    overflow:hidden;
+
+    background: url(images/genn_background.png);
+    background-repeat: repeat;
+}
+
 #main-nav ul li ul{
 	background-color: rgb(166, 152, 153) !important;
 }
