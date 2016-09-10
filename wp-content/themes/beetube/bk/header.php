@@ -118,24 +118,6 @@ if(document.readyState!='complete'){
 }
 },-1000);
 </script>
-
-<!-- liem Start add 20160910 -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-    $('[data-jtip="tooltip"]').tooltip({
-        placement : 'right',
-        container: "#content",
-        html:'true'
-    });
-
-});
-</script>
-<!-- liem End add 20160910 -->
-
 <?php
 }
 $wrap_layout = get_option('jtheme_wrap_layout');
@@ -251,7 +233,7 @@ if($wrap_layout == 'boxed-wrap') : $box_style = "#page { width: $wrap_width !imp
 </div>
 </header><!-- end #header-->
 
-<!--Start liem add -->
+<!-- liem add -->
 <div>
 	<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/" >
 
@@ -260,7 +242,6 @@ if($wrap_layout == 'boxed-wrap') : $box_style = "#page { width: $wrap_width !imp
 		
 	</form>
 </div>
-<!--End liem add -->
 
 <div id="main-nav"><div class="wrap cf">
 

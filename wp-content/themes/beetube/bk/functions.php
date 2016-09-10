@@ -282,7 +282,6 @@ function jtheme_enqueue_scripts() {
 		wp_enqueue_style('jtheme-responsive', get_template_directory_uri().'/responsive.css', 'jtheme-style', '1.4.3');
 	if( get_option('jtheme_video_or_thumb') == 'video' )
 		wp_enqueue_style('jtheme-videocss', get_template_directory_uri().'/css/to-videos.css', 'jtheme-style', '1.4.3');
-
 }
 
 /**
@@ -998,34 +997,21 @@ function jtheme_thumb_html_hori($size = 'custom-medium', $default = '', $post_id
 	if(!$size)
 		$size == 'custom-medium';
 	
-	// Get thumb url <span class="overlay"></span>  substr($body, 0, strpos($body, ' ', 260))
+	// Get thumb url
 	$thumb_url = jtheme_thumb_url($size, $default, $post_id, false);
-
-	//liem edit 20160910
-	$titleContent = str_replace(array('<b>'), array('<br><b>'), get_the_content($post_id)) ;
-	if("<br>" == substr($titleContent, 0, 4)){
-		$titleContent = substr($titleContent, 4);
-	}
-	if (strlen(esc_attr($titleContent)) > 600){
-   		$titleContent = preg_replace('/\s+?(\S+)?$/', '', substr($titleContent, 0, 600));
-   		// substr(esc_attr($titleContent), 0, strpos(esc_attr($titleContent), ' ', 600)) . '...';
-   	}
-   	$titleContent = $titleContent  . " ...";
 
 	$html = '
 	<div class="thumb">
-		<a class="clip-link" data-id="'.$post->ID.'" href="'.get_permalink($post_id).'" 
-		
-		title="' .$titleContent. '" data-jtip="tooltip" >
-
+		<a class="clip-link" data-id="'.$post->ID.'" title="'.esc_attr(get_the_title($post_id)).'" href="'.get_permalink($post_id).'">
 			<span class="clip">
-				<img src="'.$thumb_url.'" alt="'.esc_attr(get_the_title($post_id)).'" />
-				<span class="vertical-align"></span>
+				<img src="'.$thumb_url.'" alt="'.esc_attr(get_the_title($post_id)).'" /><span class="vertical-align"></span>
 			</span>
-
+							
 			<span class="overlay"></span>
 		</a>
-
+		<div class="hori-like">
+			<p class="stats">'.jtheme_get_post_stats().'</p>
+		</div>
 	</div>';
 	
 	if($echo)
