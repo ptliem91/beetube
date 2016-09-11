@@ -1545,7 +1545,7 @@ function jtheme_related_posts($args = '') {
 	?>
 	
 	<div class="section-box related-posts">
-		<div class="section-header"><h3 class="section-title"><?php _e('You may also like', 'jtheme') ?></h3></div>
+		<div class="section-header"><h3 class="section-title"><?php _e('Phim hay tương tự', 'jtheme') ?></h3></div>
 			
 		<div class="section-content <?php echo $view; ?>"><div class="nag cf">
 			<?php if( $related->have_posts() ) : while( $related->have_posts() ) : $related->the_post(); 

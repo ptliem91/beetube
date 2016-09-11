@@ -122,6 +122,7 @@ if($featuredVideo == true){
 		</div><!--end #deatils-->
 		</div><!-- end #post-<?php the_ID(); ?> -->
 		
+		<?php comments_template('', true); ?>
 		
 		<?php 			
 			if($featuredVideo2 == true && $featuredVideo == false){
@@ -157,7 +158,8 @@ if($featuredVideo == true){
 			</div>
 			<?php
 			}
-        comments_template('', true); ?>
+
+        // comments_template('', true); ?>
 
 		<?php endwhile; 
 		$bottomAdcode =  get_option('jtheme_bottom_adcode');

@@ -360,3 +360,7 @@ Thanks
 - Insert page van file theme cat-featured.php:
 <?php $id = 251; $p = get_page($id); echo apply_filters('the_content', $p->post_content); ?>
 - Khi tao WowSlider the thong dc china Effect Descriptionn
+
+*** Di chuyen fb-comment len: single-video-full-width.php
+
+*** Change text: You may also like -> functions.php
